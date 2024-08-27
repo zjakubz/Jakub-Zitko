@@ -1,0 +1,251 @@
+*{
+    
+    color: white;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    height: 300vh;
+    background-color: #292929;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10rem 5rem 10rem;
+}
+
+nav h1 {
+    margin: 0;
+    font-weight: 500;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    
+}
+
+nav ul li {
+    margin-left: 3rem;
+}
+
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    transition: color 1s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;   
+    width: 100%;
+    height: 2px; 
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/*nav-end*/
+
+.hero{
+    padding-left: 10rem;
+}
+.hero h1{
+    font-size: 96px;
+    background: linear-gradient(90deg, #ff3434 10%, #999999 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.date-container{
+    font-size: 1rem;
+    text-transform: uppercase ;
+    font-weight: 200;
+}
+
+.hero h3 {
+    color: white; 
+    font-size: 30px;
+}
+
+.hero h3 .moderni {
+    background: linear-gradient(90deg, #ff3434 10%, #999999 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.hero-btn-1 {
+    background: linear-gradient(90deg, #ff3434 0%, #999999 90%);
+    color: white; 
+    border-radius: 50px; 
+    border: none; 
+    padding: 10px 20px;
+    margin-top: 1.5rem;
+    cursor: pointer; 
+    font-size: 16px; 
+    font-weight: bold;
+    background-size: 200% 100%; 
+    background-position: left center;
+    transition: background-position 0.6s ease, padding 0.3s ease, text-transform 0.5s ease;
+}
+
+.hero-btn-1:hover {
+    background: linear-gradient(90deg, #ff3434 100%, #999999 100%);
+    padding: 10px 50px;
+    text-transform: uppercase;
+}
+.button-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 10rem;
+}
+
+.hero-btn-2 {
+    background: linear-gradient(90deg, #ff3434 0%, #999999 90%);
+    color: white; 
+    border-radius: 50px; 
+    border: none; 
+    padding: 10px 20px;
+    margin-top: 1.5rem;
+    cursor: pointer; 
+    font-size: 16px; 
+    font-weight: bold;
+    background-size: 200% 100%; 
+    background-position: left center;
+    transition: 0.4s ease-in-out;
+}
+.hero-btn-2:hover {
+    background: linear-gradient(90deg, #ff3434 100%, #999999 100%);
+    padding: 10px 50px;
+    
+}
+.button-container i  {
+    color: white; 
+    padding: 10px 20px;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    font-size: 3rem; 
+    transition: 0.4s ease-in-out;
+   
+}
+
+
+.p-container{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-right: 14rem;
+    
+}
+.p-container p{
+    padding: 0.7rem;
+    border-radius: 2rem;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+}
+
+.img-ukazka {
+    border-radius: 25px; 
+    max-width: 80%; 
+    max-height: 100%; 
+    transition: 1s ease;
+}
+.img-ukazka:hover{
+    box-shadow: 3px 30px 200px rgb(199, 199, 199);
+}
+
+/*boxes start*/
+
+
+.boxes-body{
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 10rem;
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    color: white
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.3);
+    
+    border-radius: 8px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    text-align: left;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: relative;
+    color: white;
+    transition: 0.5s ease-in-out;
+    transition-duration: 1s;
+    
+}
+.box:hover{
+    background: #ff3434;
+    box-shadow: 2px 2px 20px #ff3434;
+}
+
+.box img {
+    width: 280px;
+    height: auto;
+    
+}
+
+.box h4 {
+    margin: 0px 0 5px;
+    
+}
+
+.box p {
+    margin: 0;
+    
+}
+
+.large {
+    width: 300px;
+}
+
+.medium {
+    width: 360px;
+}
+
+.small {
+    width: 240px;
+}
+ 
+/*boxes end*/
